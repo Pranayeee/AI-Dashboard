@@ -1,13 +1,17 @@
-{
+{ "homepage" :"https://Pranayeee.github.io/Al-Dashboard",
   "name": "intern",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+
   "scripts": {
     "start": "node src/server.js",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview" , 
+    "predeploy":"npm run build",
+    "deploy" :"gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
